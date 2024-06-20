@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="header">
+            <h1></h1>
+            <div class="question-tracker"><span id="current-question">1</span> / <span id="total-questions">15</span></div>
+            <div class="timer">
+                <div class="timer-box">
+                    <span class="timer-btn">15</span>
+                </div>
+            </div>
+        </div>
+        <div class="question-container">
+            <div class="question"></div>
+        </div>
+        <div class="options-container">
+            <div class="option" onclick="checkAnswer(this)">Option A</div>
+            <div class="option" onclick="checkAnswer(this)">Option B</div>
+            <div class="option" onclick="checkAnswer(this)">Option C</div>
+            <div class="option" onclick="checkAnswer(this)">Option D</div>
+        </div>
+        <div class="controls-container">
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="score-container">
+            Score: <span id="score">0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
